@@ -1,0 +1,16 @@
+version: 1.0.{build}
+configuration: Release
+platform: Mixed Platforms
+environment:
+  buildconfig: Release
+build:
+  project: PlugsterAll.sln
+  verbosity: normal
+artifacts:
+- path: Binaries\Release\
+  name: Plugster
+  type: Zip
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: HLPdo4W72DUjj7+FmsATCWJJn1wx3ZjAb8Y36tGom/WKE5oAUB3IrFDNRxwy2GBcRYgihrR4yKGBb9dDEURHK7P8Sxw422DDa7+HQr5I0o4=
