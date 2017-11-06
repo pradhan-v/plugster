@@ -1,4 +1,4 @@
-version: 1.0.{build}
+version: 0.1.{build}
 configuration: Release
 platform: Mixed Platforms
 environment:
@@ -17,6 +17,4 @@ deploy:
   auth_token:
     secure: 53mhYPmNw2St3xVR7qF/BObpryM6uc+JCuCRUpJmdGuZYANUa3nsON6RWAQyrV25
   on:
-    branch: master
     appveyor_repo_tag: true
-
