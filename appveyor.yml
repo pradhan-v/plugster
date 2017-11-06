@@ -16,3 +16,7 @@ deploy:
   description: 'First release'
   auth_token:
     secure: 53mhYPmNw2St3xVR7qF/BObpryM6uc+JCuCRUpJmdGuZYANUa3nsON6RWAQyrV25
+  on:
+    branch: master
+    appveyor_repo_tag: true
+skip_tags: true
