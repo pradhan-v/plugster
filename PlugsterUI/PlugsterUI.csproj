@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{800B77D6-6CAF-4339-8474-0BA6279B6EDC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlugsterUI</RootNamespace>
+    <AssemblyName>PlugsterUI</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>MadPiranha\Plugster\UI\target3.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binaries\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Binaries\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastColoredTextBox, Version=2.8.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\FastColoredTextBox\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="ManyUtils, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\References\ManyUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="PlugsterBase">
+      <HintPath>..\..\..\References\PlugsterBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PlugsterMain.cs" />
+    <Compile Include="MadPiranha\Plugster\UI\Base\ITestsHolderControl.cs" />
+    <Compile Include="MadPiranha\Plugster\UI\Controls\OutputWindow2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Base\ParamUpdatedArgs.cs" />
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\AbstractParamControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\BoolControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\BoolControl.Designer.cs">
+      <DependentUpon>BoolControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\CoOrdinatesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\CoOrdinatesControl.Designer.cs">
+      <DependentUpon>CoOrdinatesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\IParamControl.cs" />
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\KeyValueControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\KeyValueControl.Designer.cs">
+      <DependentUpon>KeyValueControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\LabelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\LabelControl.Designer.cs">
+      <DependentUpon>LabelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\NumberControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\NumberControl.Designer.cs">
+      <DependentUpon>NumberControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\ParamsControlFactory.cs" />
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\TextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\Params\TextControl.Designer.cs">
+      <DependentUpon>TextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\TestsHolderListPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\PlugsterWindow2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\PlugsterWindow2.Designer.cs">
+      <DependentUpon>PlugsterWindow2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\QuickTestPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\QuickTestPanel.Designer.cs">
+      <DependentUpon>QuickTestPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\TheTestWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\Plugster\UI\Controls\TheTestWindow.Designer.cs">
+      <DependentUpon>TheTestWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MadPiranha\Plugster\UI\Controls\OutputWindow2.resx">
+      <DependentUpon>OutputWindow2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\Plugster\UI\Controls\Params\AbstractParamControl.resx">
+      <DependentUpon>AbstractParamControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\Plugster\UI\Controls\Params\BoolControl.resx">
+      <DependentUpon>BoolControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\Plugster\UI\Controls\Params\CoOrdinatesControl.resx">
+      <DependentUpon>CoOrdinatesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\Plugster\UI\Controls\Params\LabelControl.resx">
+      <DependentUpon>LabelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\Plugster\UI\Controls\Params\NumberControl.resx">
+      <DependentUpon>NumberControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\Plugster\UI\Controls\Params\TextControl.resx">
+      <DependentUpon>TextControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\Plugster\UI\Controls\TestsHolderListPanel.resx">
+      <DependentUpon>TestsHolderListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\Plugster\UI\PlugsterWindow2.resx">
+      <DependentUpon>PlugsterWindow2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\Plugster\UI\Controls\QuickTestPanel.resx">
+      <DependentUpon>QuickTestPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\Plugster\UI\Controls\TheTestWindow.resx">
+      <DependentUpon>TheTestWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.manifest" />
+    <None Include="MadPiranha\Plugster\UI\images\target3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MadPiranha\Plugster\UI\images\target4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MadPiranha\Plugster\UI\target3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FlatForm\FlatForm.csproj">
+      <Project>{66EEDFCB-DDBD-47DE-ABD1-C3128A4028EA}</Project>
+      <Name>FlatForm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

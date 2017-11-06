@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66EEDFCB-DDBD-47DE-ABD1-C3128A4028EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Flat</RootNamespace>
+    <AssemblyName>FlatForm</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binaries\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Binaries\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\FastColoredTextBox\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MadPiranha\FlatForm\Controls\FilterListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\FilterListControl.Designer.cs">
+      <DependentUpon>FilterListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\MyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\MyCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\MyListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\MyRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\MySplitterContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\MyTabControl2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\MyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\CodeTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\CodeTextBox.designer.cs">
+      <DependentUpon>CodeTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\ShowHideFilterListPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\ShowHideFilterListPanel.Designer.cs">
+      <DependentUpon>ShowHideFilterListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\ShowHidePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\ShowHidePanel.Designer.cs">
+      <DependentUpon>ShowHidePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\ShowHidePanelButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\TheFlatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\TheFlatForm.Designer.cs">
+      <DependentUpon>TheFlatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\NonClientButtons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\Controls\NonClientButtons.Designer.cs">
+      <DependentUpon>NonClientButtons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadPiranha\FlatForm\UITheme.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MadPiranha\FlatForm\Controls\CodeTextBox.resx">
+      <DependentUpon>CodeTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\FlatForm\Controls\FilterListControl.resx">
+      <DependentUpon>FilterListControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\FlatForm\Controls\ShowHideFilterListPanel.resx">
+      <DependentUpon>ShowHideFilterListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\FlatForm\Controls\ShowHidePanel.resx">
+      <DependentUpon>ShowHidePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\FlatForm\TheFlatForm.resx">
+      <DependentUpon>TheFlatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadPiranha\FlatForm\Controls\NonClientButtons.resx">
+      <DependentUpon>NonClientButtons.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

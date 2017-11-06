@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0D22F9C-9CF4-498B-B4FD-C89B47E2473B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Plugster.Base</RootNamespace>
+    <AssemblyName>PlugsterBase</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binaries\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Binaries\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MadPiranha\Plugster\Base\Loader\IPlugLoadInfo.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Loader\ITestLoader.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Loader\PlugLoader.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Loader\PlugLoadEventArgs.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Manager\Sponsorer.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Output\ConsoleOutput.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Param\CompositeParam.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\QuickTest\ComplieUnitCreator.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\QuickTest\IQuickTestInput.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\QuickTest\QuickTest.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Reader\INIReader.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Loader\PlugLoadInfo.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\TempFactory.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Test\AbstractTest.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Param\IParam.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Manager\Sponsor.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Param\BoolParam.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Param\CoOrdinatesParam.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Param\KeyValueParam.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Param\LabelParam.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Param\NumberParam.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Param\TextParam.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Test\RemoteMethod.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Loader\TestLoadInfo.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Test\TestController.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Test\TestLifeCycleEventArgs.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\BaseUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MadPiranha\Plugster\Base\Output\IOutput.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Test\ITest.cs" />
+    <Compile Include="MadPiranha\Plugster\Base\Loader\TempPlugLoader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AllTests.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="mscoree">
+      <Guid>{5477469E-83B1-11D2-8B49-00A0C9B7C9C4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>False</Private>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

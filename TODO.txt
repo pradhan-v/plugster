@@ -1,0 +1,35 @@
+- hot swap fastcolortextarea
+
+- Remote tests... run tests on another app.
+
+- Extend current test in plugster quick test. problem comes while execution, it cannot find/load dll. same during compile also. quick test exec should load all related dlls too.
+
+- App domain Unload, so that dlls of tests which are not used or closed can be unloaded.
+
+- Get the tests automatically from the assemblies. Dont depend on the INI. May be create an xml for exclusion and other properties.
+
+- Fix the design and implement patterns.
+
+- Params...
+	Text area param
+	Invoke param
+	Key value list (Hashtable) param
+	List param
+
+- (ongoing)Separate View and controller. Move core to base from ui.
+
+- Add/Remove tests at runtime. Adding a dll in the TestsBinaries or an entry in the ini/xml and the UI refreshes with the new tests.
+
+- Move to xml from ini
+
+- Save settings
+
+- Threading for tests... Pause, Resume, Stop, Close tests
+
+- UI based output instead of only text based.
+
+- MyTextArea...
+	Save text to file
+	Search
+	Line number and goto line
+

@@ -1,0 +1,60 @@
+0.99a
+	1. Integration with Fast Colored text box.
+	2. Generate code hard coded to c sharp code.
+	3. Drag and drop files to quick test.
+	4. Drag and drop assemblies to add tests (goes to default domain)
+	5. Capture output to logs for quick test execution
+	6. Save(Ctrl+S) and Auto indent(Ctrl+Shift+I) for quick test.
+	7. Quick test UI changes.
+
+0.99
+	1. UIColors to UITheme, Added borderstyle, flatstyle, tablook.
+	2. Flat tab can be turned off/on, TabLook
+	3. Removed window titlebar. Implemented window resize, move and maximize.
+	4. Changed TestWindows test to support reuse. Created WindowInfo class in util.
+	5. Implemented AutoLoad
+	6. Added minimize, restore, close buttons.
+	7. Added DotNetRuntime test to find .net runtimes in a process and VS Solution(CLRUtils).
+	8. Added MenuAction.cs and MenuTest Plug.
+	9. Added ProcessTest
+	10. Non client button actions are drawn instead of using text.
+	11. Flatform a separate project. Plugster window extends flatform.
+	12. PlugsterUtils to ManyUtils.
+	13. Controls moved to FlatForm.
+
+0.98e
+	0. Messed up a lot of UI code.
+	1. Console Output
+	2. Added change log and todo txt to PlugsterUI project.
+	3. Created ShowHidePanel. TestsListPanel uses this.
+	4. Created ShowHidePanelButton.
+	5. Added app domain list.
+	6. Tests dll go to the default dir and not to the TestsBinaries folder. This is to avoid manual load of assemblies.
+	7. Create .net4.0 SideBySide solution and plug. Added app.manifest to PlugsterUI.exe 
+	8. Tab page shows loading text while loading the test.
+	9. Created flat tabs.
+	10. UIColors to change colors.
+
+0.98d
+	1. Only one instance of plugster.
+	2. Create PlugsterAll solution having all projects including tests.
+	3. Changed the win+x to Win+A
+	4. Changed the tab close message.
+	5. Exception handling in Sponsorer.cs while unregister/exit.
+	6. Changes in TestController and TestWindow. No ref to test in test window.
+	7. Added Name to TestLoadInfo so that we avoid to use testloadinfo.Test.Name(holder.Test.Name) to avoid remote exception.
+	8. Renamed HotKey.cs to HotKeyRegister.cs in Util
+	9. Hotkeyregister will need a consumer to take action on specific hotkey press. 
+	10. Using the hot key register in Plugster UI for mainwindow and test window
+
+0.98c
+	1. Win+X shortcut for getting focus and showing test list
+	2. Always on top
+	3. Created AbstractParamControl, has update control and param value.
+	4. Text and Bool control implements/extends AbstractparamControl
+	5. Corrected the close button click rect on tabs. Changed the confirm window text.
+	6. Removed ParamsWindow2
+	7. Factory for control params in PlugsterUI
+
+0.98b
+	1. Added events for param changes, only implemented for textcontrol
