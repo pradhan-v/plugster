@@ -11,6 +11,8 @@ artifacts:
   name: Plugster
   type: Zip
 deploy:
+  release: plugster-v$(appveyor_build_version)
+  description: 'First release'
 - provider: GitHub
   auth_token:
-    secure: HLPdo4W72DUjj7+FmsATCWJJn1wx3ZjAb8Y36tGom/WKE5oAUB3IrFDNRxwy2GBcRYgihrR4yKGBb9dDEURHK7P8Sxw422DDa7+HQr5I0o4=
+    secure: 53mhYPmNw2St3xVR7qF/BObpryM6uc+JCuCRUpJmdGuZYANUa3nsON6RWAQyrV25
